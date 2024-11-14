@@ -18,7 +18,7 @@ class ToDoList:
     def remove_task(self, task): pass
 
 # Dice Rolling Simulatoor :
-class Dice:
+class Dice:# lacer de 
     def __init__(self, sides=6): pass
     def roll(self): pass
 
