@@ -26,7 +26,7 @@ class Quiz:
                         break
                 except ValueError:
                     print("Invalid input. Please enter a number (1-4).")
-                    
+
             if Question.is_correct(user_answer):
                 print("Correct answer")
                 self.score += 1
@@ -38,6 +38,9 @@ class Quiz:
 quiz = Quiz()
 question1 = Question("What is the capital of France?", ["Paris", "Berlin", "London", "Madrid"], 0)
 question2 = Question("What is the name of the largest island in the world?", ["Greenland", "Antarctica", "Madagascar", "Iceland"], 2)
+question3 = Question("1+1 = :",[1,2,3],1)
+
 quiz.add_question(question1)
 quiz.add_question(question2)
+quiz.add_question(question3)
 quiz.start()
